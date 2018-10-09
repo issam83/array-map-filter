@@ -52,14 +52,13 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 */
 
 function getCirclesProperties(radiuses) {
-  return radiuses.map(function(radius){
-  circu = ( 2 * Math.PI * radius );
-  surf = ( Math.PI * radius * radius);
-  return{
-     radius: radius,
-     circumference: circonference.toFixed(3),
-     surface: surface.toFixed(3),
-  } 
+  return radiuses.map(radius =>{
+    return radius = {
+  radius : radius,    
+  circumference : ( 2 * Math.PI * radius ).toFixed(3),
+  surface : ( Math.PI * radius * radius).toFixed(3),
+  
+  };
   });
 }
 
