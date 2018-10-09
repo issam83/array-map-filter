@@ -1,4 +1,4 @@
-const getStringsLength = require('../map/ex1.js');
+const getStringsLength =  require('../map/ex1.js');
 
 describe('map - exercice 1', () => {
 

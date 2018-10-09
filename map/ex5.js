@@ -18,8 +18,7 @@ function multiplyOddIndices(numbers) {
      return num 
    }else {
      return num * index
-   }
-  
+   }  
 });
 }
 module.exports = multiplyOddIndices;
