@@ -37,8 +37,10 @@ Exemple d'entrée:
 
 
  */
-
+const research = 'Revenge';
 function searchWordFilter(items, search) {
+  search.toLowerCase();
+  return items.filter(film => film.toLowerCase().includes(search));
 }
 
 // Ne pas modifier l'export

@@ -58,8 +58,20 @@ En sortie:
   ]
 
  */
+let film = ["crazy rich asian", "skyscraper","leave no trace", "white boy rick"];
+let note = [93, 46, 100, 60];
 
-function getMoviesFreshness(movies) {
+function getMoviesFreshness(movies){
+  return movies.map(function(movie){
+    if (movie.rating < 60){
+      movie.label = "rotten";
+    }else if (movie.rating >=60 && movie.rating <= 75){
+      movie.label = "fresh";
+    }else {
+      movie.label = "certified fresh";
+    };
+   return movie;
+  });
 }
 
 
